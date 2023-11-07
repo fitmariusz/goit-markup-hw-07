@@ -43,6 +43,26 @@
           </ul>
         </nav>
 
+        <button
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg
+            width="24"
+            height="24"
+            fill="currentColor"
+            viewBox="0 0 20 20"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+        </button>
+
         <!--Contact-->
         <address class="adress-list">
           <ul class="list address-flex">
@@ -83,7 +103,7 @@
                 </svg>
               </div>
               <h3 class="fontshthre">Strategy</h3>
-              <p class="p-font">
+              <p class="">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -164,7 +184,7 @@
       <section class="all-section team-section">
         <div class="container">
           <h2 class="fontshtwo">Our Team</h2>
-          <ul class="team-gallery-grid flex-grid">
+          <ul class="team-gallery-grid team-flex-grid">
             <li class="team-li-flex-grid">
               <img
                 src="./images/mark.jpg"
@@ -393,8 +413,8 @@
         </div>
       </section>
     </main>
+    <footer></footer>
     <footer class="fooster-parameters">
-      <!--LOGO-->
       <div class="container all-section fooster-grip">
         <div class="fooster-div">
           <a class="logo link-footer" href="./index.html"
@@ -546,7 +566,6 @@
           </div>
           <div class="modal-form modal-form-texture">
             <label class="modal-form-label" for="user-comment"> Comment </label>
-            <!-- <div class="modal-input-div"> -->
             <textarea
               class="modal-input-div-textarea"
               name="user-comment"
@@ -554,9 +573,7 @@
               rows="5"
               placeholder="Text input"
             ></textarea>
-            <!-- </div> -->
           </div>
-          <!-- <div class="modal-form"> -->
           <div class="modal-check-div">
             <input
               class="visually-hidden modal-check"
@@ -581,12 +598,92 @@
               <a href="" class="modal-privacy-link">Privacy Policy</a>
             </label>
           </div>
-          <!-- </div> -->
 
           <button class="modal-form-button" type="submit">Send</button>
         </form>
       </div>
     </div>
+    <!---
+add menu mobile
+-->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+      <button class="menu-toggle js-close-menu button-js">
+        <svg
+          viewBox="0 0 20 20"
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+        >
+          <path
+            fill-rule="evenodd"
+            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu">
+        <li><a class="list-font link" href="./index.html">Studio</a></li>
+        <li>
+          <a class="list-font link" href="./portfolio.html">Portfolio</a>
+        </li>
+        <li><a class="list-font link" href="">Contacts</a></li>
+      </ul>
+
+      <address class="mobile-adress-menu">
+        <ul class="list mobile-address-flex">
+          <li class="mobile-link-font link-font link">
+            <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+          </li>
+          <li class="mobile-link-font link-font link">
+            <a class="link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+      </address>
+
+      <div>
+        <ul class="mobile-icons">
+          <li class="team-icon">
+            <a class="team-icon-link" href="">
+              <svg class="team-icon-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-instagram-2"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-icon">
+            <a class="team-icon-link" href="">
+              <svg class="team-icon-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-twitter-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-icon">
+            <a class="team-icon-link" href="">
+              <svg class="team-icon-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-facebook-1"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="team-icon">
+            <a class="team-icon-link" href="">
+              <svg class="team-icon-svg" width="16" height="16">
+                <use href="./images/icons.svg#icon-linkedin-1"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>
