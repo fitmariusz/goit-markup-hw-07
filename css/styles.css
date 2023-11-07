@@ -219,16 +219,7 @@ ol {
 }
 
 
-.fontshone {
-    color: var(--color-buttons-text);
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 1.07;
-    text-align: center;
-    letter-spacing: 0.02em;
-    max-width: 496px;
-    margin: auto;
-}
+
 
 .fontshtwo {
     font-size: 36px;
@@ -388,6 +379,7 @@ ol {
     gap: 332px;
     background: var(--color-white-background, #FFF);
 }
+
 .hero-modal{
     position: fixed;
     inset: 0 0 auto;
@@ -1079,11 +1071,24 @@ color: var(--color-ressed-state);
     
  
     .header-div {
-        display: inline-flex;
+        display: flex;
         height: 72px;
+        gap:240px;
         align-items: center; 
         justify-content: space-between; 
         background: var(--color-white-background, #FFF);
+    }
+
+    .fontshone {
+        color: var(--color-buttons-text);
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 1.11; /* 111.111% */
+        letter-spacing: 0.72px; 
+        text-align: center;     
+        max-width: 496px;
+        margin: auto;
     }
 .fooster-parameters {
     background-color: var(--color-dark);
@@ -1243,7 +1248,10 @@ color: var(--color-ressed-state);
     margin-left: 16px;
 
 }
-
+.header-div{
+    padding-left:16px;
+    gap: 176px;
+}
 .p-font-fooster {
     color: var(--color-light);
     line-height: 1.5;
@@ -1288,7 +1296,7 @@ color: var(--color-ressed-state);
 
     margin: auto;
     background-color: var(--color-dark);
-    padding: 188px 0;
+    padding: 112px 0;
     background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/peopleoffice-428.jpg');
     background-size: cover;
     max-width: 428px;
@@ -1314,7 +1322,7 @@ color: var(--color-ressed-state);
     }
 
     .container {
-       max-width: 768px;
+       max-width: 767px;
        margin: auto;
         padding: 0;
     }
@@ -1326,6 +1334,7 @@ color: var(--color-ressed-state);
     .customers-flex-grip {
         row-gap: 72px;
         column-gap: 24px;
+        padding: 0 15px;
     }
     .customers-li-flex {
         width: 168px;
@@ -1334,11 +1343,23 @@ color: var(--color-ressed-state);
     .header-div {
         gap: 121px;
     }
-
+    .fontshone {
+        color: var(--color-buttons-text);
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07;
+        text-align: center;
+        letter-spacing: 0.02em;
+        max-width: 496px;
+        margin: auto;
+    }
 
     .fontshthre {
         text-align:left;
     }
+
+
+
 
 .fooster-parameters {
     
@@ -1357,8 +1378,8 @@ color: var(--color-ressed-state);
 .fooster-grip {
     display: flex;
     align-items: baseline;
-        justify-items: left;
-    justify-content: center;
+    margin:auto;
+    padding-left: 108px;
     
     /* flex-direction: row; */
     flex-wrap: wrap;
@@ -1552,7 +1573,12 @@ color: var(--color-ressed-state);
         margin: 0 auto;
         padding: 0 15px;
     }
-    
+    .customers-flex-grip {
+        row-gap: 72px;
+        column-gap: 24px;
+        padding: 0 ;    
+    }
+
     .address-flex {
         flex-direction: row;
         gap: 40px;
@@ -1839,33 +1865,47 @@ color: var(--color-ressed-state);
     flex-direction: column;
     gap: 40px;
 }
-.mobile-link-font{
-    color: var(--color-text);
-}
 
-.mobile-link-font:first-child{
+
+.mobile-link-font:first-child>a{
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.72px;
     color:var(--color-text);
+    transition: color var(--var-time-tr) var(--var-translate);
 }
-.mobile-link-font:last-child{
+.mobile-link-font:last-child>a{
     color: var(--color-text);
     font-size: 20px;
     font-style: normal;
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.4px;
+    transition: color var(--var-time-tr) var(--var-translate);
+
 }
+.mobile-link-font {
+    color: var(--color-tel-and-mail);
+    
+}
+
+.mobile-link-font:first-child>a:focus,
+.mobile-link-font:first-child>a:hover,
+.mobile-link-font:last-child>a:focus,
+.mobile-link-font:last-child>a:hover{
+    color: var(--color-primary-brand);
+}
+
 
 
 .mobile-icons{
     display: flex;
     gap: 56px;
-    justify-content: center;
+    justify-content: left;
     margin-top: 48px;
+    margin-left: 40px;
 }
 
 .mobile-menu .link {
