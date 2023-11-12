@@ -515,7 +515,7 @@ color: var(--color-ressed-state);
 
     display: inline-block;
     color: var(--color-primary-brand);
-    margin-right: 76px;
+    /* margin-right: 76px; */
 
 }
 
@@ -567,7 +567,7 @@ color: var(--color-ressed-state);
     align-items: center;
     top: 50%;
     left: 50%;
-    min-height: 584px;
+    min-height: 620px;
     border-radius: 4px;
     transform: translate(-50%, -50%);
     width: 408px;
@@ -1121,7 +1121,7 @@ color: var(--color-ressed-state);
     gap: 40px;
     padding: 0;
     /* margin-top: 32px; */
-    /* margin-left: 40px; */
+    /* margin-left: 40px; 
     margin-bottom: 260px;
     list-style: none;
 } */
@@ -1205,7 +1205,7 @@ color: var(--color-ressed-state);
 @media screen and (max-width:428px) {
     .container {
         max-width: 428px;
-        padding: 0 15px;
+        padding: 0 5px;
         margin: 0 auto;
 
     }
@@ -1214,36 +1214,20 @@ color: var(--color-ressed-state);
      display: none;
  }
 
- .container {
-     max-width: 428px;
-     padding: 0 5px;
-     ;
-     margin: 0 auto;
-
-
-
-     /* max-width: 428px;
-            
-            margin-left: auto;
-            margin-right: auto; */
- }
-
-
-
  .customers-li-flex {
      width: 190px;
      height: 88px;
  }
 
 
- .header-div {
+ /* .header-div {
      display: flex;
      height: 72px;
      gap: 380px;
      align-items: center;
      justify-content: space-between;
      background: var(--color-white-background, #FFF);
- }
+ } */
 
  .fontshone {
      color: var(--color-buttons-text);
@@ -1445,20 +1429,16 @@ color: var(--color-ressed-state);
 
 
  .header-div {
-     /* justify-items: left;
-    position: relative;
-    margin: auto; */
-     /* gap: 176px; */
-     /* padding-left:16px; */
      gap: 60px;
+
  }
 
 
  .list-section-one-flex {
-     display: inline-flex;
+     display: flex;
      flex-direction: column;
-     align-items: baseline;
-     justify-content:space-between;
+     /* align-items: baseline;
+     justify-content:space-between; */
      gap: 50px;
  }
 
@@ -1504,7 +1484,7 @@ color: var(--color-ressed-state);
      padding: 112px 0;
      background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url('../images/peopleoffice-428.jpg');
      width: 100%;
-     height: 432px;
+     height: 429px;
      background-repeat: no-repeat;
      background-position: center;
      background-size: cover;
@@ -1584,7 +1564,7 @@ color: var(--color-ressed-state);
 }
 
 .p-font {
-    width: 290px;
+    min-width: 290px;
     color: var(--color-text);
     line-height: 1.5;
     letter-spacing: 0.02em;
@@ -1755,7 +1735,7 @@ color: var(--color-ressed-state);
 }
 
 .fooster-subsrible-form {
-    width: 453px;
+    width: 428px;
 
 }
 
@@ -2173,6 +2153,22 @@ color: var(--color-ressed-state);
         color: var(--color-text);
         width: calc((100% - 24px) / 2);
     }   
+
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 1.17;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    display: inline-block;
+    color: var(--color-primary-brand);
+    margin-right: 76px;
+
+}
+
+
 
     .menu-header-div{
         display: inline-flex;
